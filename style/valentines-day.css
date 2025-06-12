@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+/* songs */
 body {
     font-family: "Roboto Slab", Arial;
 }
@@ -96,5 +97,34 @@ body {
 .progress {
     height: 6px;
     background-color: #333;
+    border-radius: 5px;
+}
+
+/* pictures */
+.container2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    min-height: 100vh;
+}
+
+
+.carrosel {
+    filter: drop-shadow(0px 0px 10px #000);
+    overflow: hidden;
+    height: 560px;
+    width: 280px;
+}
+
+.sub-container {
+    display: flex;
+    transition: 0.7s ease-in-out;
+    transform: translateX(0);
+}
+
+img {
+    width: 280px;
+    height: auto;
     border-radius: 5px;
 }

@@ -1,3 +1,4 @@
+// music display
 const player = document.querySelector("#player");
 const musicName = document.querySelector("#musicName");
 const playPauseButton = document.querySelector("#playPauseButton");
@@ -87,3 +88,19 @@ const prevNextMusic = (type = "next") => {
 };
 
 prevNextMusic("init");
+
+// slides
+const box = document.querySelector(".sub-container");
+const images = document.querySelectorAll(".sub-container img");
+
+let indexImg = 0;
+
+function slider() {
+    indexImg++
+    if (indexImg > images.length - 1) {
+        indexImg = 0;
+    }
+    box.style.transform = `translateX(${-indexImg * 280}px)`
+}
+
+setInterval(slider, 5000);
