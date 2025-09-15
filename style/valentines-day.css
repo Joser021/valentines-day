@@ -64,7 +64,6 @@ body {
     display: flex;
     font-size: 40px;
     padding: 5px;
-    /* align-items: center; */
     border-radius: 50%;
     background-color: #FFD22F;
     transition: all .2s;
